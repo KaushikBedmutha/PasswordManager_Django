@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSWORD GENERATOR</title>
+    <link rel="stylesheet" href="passG.css" />
+    <script src="passG.js" defer></script>
+</head>
+
+<body>
+
+    <div class="pw-container">
+        <div class="pw-header">
+            <div class="pw">
+
+                <span id="pw">8ihfhnelkji2</span>
+
+                <button id="copy">
+                    Copy
+                </button>
+            </div>
+        </div>
+        <div class="pw-body">
+            <!-- length of the password to be generated -->
+            <div class="form-control">
+                <label for="len">Password Length</label>
+                <input id="len" value="8" type="number" min="2" max="8" />
+            </div>
+
+
+            <div class="form-control">
+                <label for="upper">Add Uppercase Letters</label>
+                <input id="upper" type="checkbox" />
+            </div>
+
+            <div class="form-control">
+                <label for="lower">Add Lowercase Letters</label>
+                <input id="lower" type="checkbox" />
+            </div>
+
+
+            <div class="form-control">
+                <label for="number">Add Numbers</label>
+                <input id="number" type="checkbox" />
+            </div>
+
+
+            <div class="form-control">
+                <label for="symbol">Add Symbols</label>
+                <input id="symbol" type="checkbox" />
+            </div>
+
+            <button class="generate" id="generate">
+                Generate Password
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
